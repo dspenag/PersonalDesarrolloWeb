@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi vigesimo cuarto html</title>
+</head>
+<body>
+    <h1> Hola, Mundo </h1>
+    <h2>Subtitulo 1</h2>
+    <h3>subtitulo 2</h3>
+    <h4>subtitulo 3</h4>
+    <h5>subtitulo 4</h5>
+    <h6>subtitulo 5</h6>
+
+    <p>Este es un párrafo de ejemplo<BR> texto después del salto de línea</p>
+
+    <p>
+        <strong> strong <br></strong>
+        <em> em <br></em>
+        <u> u <br></u>
+        <sub> sub <br></sub>
+        <sup> sup <br></sup>
+    </p>
+
+    <p>Representemos los siguientes estilos en HTML</p>
+
+    <p>
+        La <em>fórmula</em> del <strong>agua</strong> es H<sub>2</sub>O<br>
+        Y un <u>número</u> elevado al <strong>cuadrado</strong> es X<sup>2</sup>
+    </p>
+
+    <img src="../imagenes/emirates.jpg" alt="estadio del arsenal" width="250">
+    <br><br>
+    <img src="../imagenes/julian.png" alt="Julian Alvarez" width="500">
+
+    
+    <svg style="display: none;">
+        <defs>
+            
+            <image id="001" href="../imagenes/emirates.jpg" width="200" height="150" />
+        </defs>
+    </svg>
+
+    <h3>Reutilización de la misma imagen con use</h3>
+
+    <svg width="200" height="150">
+        <use href="#001" />
+    </svg>
+
+    <svg width="200" height="150">
+        <use href="#001" />
+    </svg>
+
+    <svg width="200" height="150">
+        <use href="#001" />
+    </svg>
+
+    #listas ordenadas
+    <p> articulos de proteccion contra el coronavirus</p>
+    <ul type="disc">
+        <li>Mascarillas</li>
+        <li>Desinfectantes</li>
+        <li>Termometros</li>
+    </ul>
+    <p> articulos de proteccion contra el coronavirus</p>
+    <ul type="circle">
+        <li>Mascarillas</li>
+        <li>Desinfectantes</li>
+        <li>Termometros</li>
+    </ul>
+    <p> articulos de proteccion contra el coronavirus</p>
+    <ul type="square">
+        <li>Mascarillas</li>
+        <li>Desinfectantes</li>
+        <li>Termometros</li>
+    </ul>
+
+    <a href="https://www.google.com" target="_blank">Visitar Google</a>
+
+    <table border="1">
+        <caption>Tabla de ejemplo</caption>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Gomez</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <table border = "1">    
+        <caption>Tabla de horario</caption>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+        </tr>
+        <tr>
+            <td>7:am</td>
+            <td colspan = "2"> desayuno</td>
+            
+        </tr>
+        <tr>
+            <td>8:am</td>
+            <td>reunion</td>
+            <td>clase</td>
+        </tr>
+    </table>
+
+    <table border = "1">    
+        <caption>Tabla de horario</caption>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+        </tr>
+        <tr>
+            <td>7:am</td>
+            <td rowspan = "2"> desayuno</td>
+            <td style="background-color: red;">gimnasio </td>
+            
+        </tr>
+        <tr>
+            <td>8:am</td>
+            <td>reunion</td>
+        </tr>
+    </table>
+
+</body>
+</html>
