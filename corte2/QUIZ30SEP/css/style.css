@@ -1,0 +1,229 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #f9a825;
+}
+
+.lista-personajes {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-personajes li {
+  margin: 10px 0;
+}
+
+.foto-personaje {
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.lista-personajes a,
+a {
+  color: #f9a825;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.lista-personajes a:hover,
+a:hover {
+  text-decoration: underline;
+}
+
+.ficha {
+  width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 3px solid #f9a825;
+  border-radius: 10px;
+  background-color: #262626;
+  text-align: left;
+}
+
+.ficha h2 {
+  margin-top: 0;
+}
+
+.ficha p {
+  text-align: justify;
+}
+
+
+#titulo-personaje {
+  text-align: center;
+}
+
+.rol-soporte {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.rol-daño {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.rol-tanque {
+  color: #3498db;
+  font-weight: bold;
+}
+
+
+:root {
+  --card-fondo: #111827;
+  --card-azul: #3b82f6;
+  --card-cyan: #06b6d4;
+  --card-texto-sec: #94a3b8;
+}
+
+.card,
+.card * {
+  box-sizing: border-box;
+}
+
+.escena {
+  perspective: 1000px;
+  margin: 30px auto;
+  width: 260px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden; 
+  border: 2px solid transparent;
+  border-radius: 18px;
+  background:
+    linear-gradient(var(--card-fondo), var(--card-fondo)) padding-box,
+    linear-gradient(135deg, var(--card-cyan), var(--card-azul)) border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+  transition: transform .4s ease, box-shadow .4s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 20px 45px rgba(59, 130, 246, .45);
+}
+
+.imagen-wrapper {
+  position: relative;
+}
+
+.avatar-personaje {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background: linear-gradient(135deg, var(--card-cyan), var(--card-azul));
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 999px;
+  box-shadow: 0 0 12px rgba(59, 130, 246, .6);
+}
+
+.card-contenido {
+  padding: 20px;
+}
+
+.card .etiqueta {
+  color: var(--card-texto-sec);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.card .titulo {
+  font-size: 22px;
+  margin-bottom: 10px;
+  transition: color .3s ease, text-shadow .3s ease;
+}
+
+.card:hover .titulo {
+  color: var(--card-cyan);
+  text-shadow: 0 0 15px var(--card-azul);
+}
+
+.card .descripcion {
+  font-size: 13px;
+  color: var(--card-texto-sec);
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.poder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: rgba(59, 130, 246, .12);
+  border: 1px solid rgba(59, 130, 246, .35);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.icono-poder {
+  font-size: 20px;
+}
+
+.poder strong {
+  display: block;
+  font-size: 13px;
+}
+
+.poder p {
+  font-size: 12px;
+  color: var(--card-texto-sec);
+}
+
+.btn-activar {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--card-azul), var(--card-cyan));
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.btn-activar:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgba(59, 130, 246, .7);
+}
+
+.btn-activar:active {
+  transform: scale(0.97);
+}
+
+.card-enlace {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-enlace:hover {
+  text-decoration: none;
+}
