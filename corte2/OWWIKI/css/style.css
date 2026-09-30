@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #f9a825;
+}
+
+.lista-personajes {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-personajes li {
+  margin: 10px 0;
+}
+
+.foto-personaje {
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.lista-personajes a,
+a {
+  color: #f9a825;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.lista-personajes a:hover,
+a:hover {
+  text-decoration: underline;
+}
+
+.ficha {
+  width: 700px;
+  margin: 30px auto;
+  padding: 30px;
+  border: 3px solid #f9a825;
+  border-radius: 10px;
+  background-color: #262626;
+  text-align: left;
+}
+
+.ficha h2 {
+  margin-top: 0;
+}
+
+.ficha p {
+  text-align: justify;
+}
+
+#titulo-personaje {
+  text-align: center;
+}
+
+.rol-soporte {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.rol-daño {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.rol-tanque {
+  color: #3498db;
+  font-weight: bold;
+}
