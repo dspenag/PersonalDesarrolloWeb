@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column; /* Apila las cards verticalmente */
+    align-items: center;     /* Centra ambas cards en la pantalla */
+    gap: 30px;               /* Espacio entre la primera y la segunda card */
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Card compartida */
+.cuadro-esopo {
+    background-color: #0c8f6e;
+    border: 5px dashed #d8e520;
+    width: 100%;
+    max-width: 820px;
+    padding: 35px 25px 25px 25px;
+    color: #ffffff;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Imagen de Esopo */
+.foto-esopo {
+    float: left;
+    width: 140px;
+    height: auto;
+    margin-right: 18px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+/* Textos */
+p {
+    font-size: 1.05rem;
+    line-height: 1.35;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.homero {
+    color: #ffff00;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Lista de fábulas */
+.lista-fabulas {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.lista-fabulas li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Clase para el icono de la manzana */
+.icono-lista {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
